@@ -11,17 +11,19 @@ body {
 .player {
   border-radius: 8px;
   width: 230px;
+  height: 360px;
   background: #2f3136;
   font-size: 11px;
   padding: 10px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.75);
+  row-gap: 5px;
 
   -webkit-app-region: drag;
 
   display: grid;
   grid-template-columns: 1fr 50px 50px 50px 1fr;
-  grid-template-rows: 215px minmax(50px, min-content) 50px 30px;
+  grid-template-rows: 1fr minmax(30px, min-content) 45px 20px;
   grid-template-areas:
     ".           image       image       image       .          "
     "track-title track-title track-title track-title track-title" 

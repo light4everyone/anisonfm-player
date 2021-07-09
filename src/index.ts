@@ -64,8 +64,8 @@ const createWindow = (): void => {
   const xOffset = app.isPackaged ? 10 : 500;
 
   mainWindow = new BrowserWindow({
-    //height,
-    //width,
+    height,
+    width,
     x: displayWidth - width - xOffset,
     y: displayWeight - height - yOffset,
     frame: !app.isPackaged,
