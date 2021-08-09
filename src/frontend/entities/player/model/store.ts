@@ -1,6 +1,6 @@
 import { createEffect, createEvent, createStore, forward, guard } from "effector";
-import { searchAnime } from "../api/skikimori.api";
-import { getStatus } from "../api/anison-status.api";
+import { getStatus } from "../../../shared/api/anison-status.api";
+import { searchAnime } from "../../../shared/api/skikimori.api";
 import { createCountdown } from "./countdown";
 
 // Effects

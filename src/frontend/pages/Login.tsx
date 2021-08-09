@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from 'react';
 import { ipcRenderer } from 'electron';
-import { AuthCallback } from '../models/auth-callback.model';
-import { useAuth } from '../lib/auth';
+import { AuthCallback } from '../shared/auth/models/auth-callback.model';
+import { useAuth } from '../shared/auth/lib/auth';
 
 export const Login = () => {
   const auth = useAuth();

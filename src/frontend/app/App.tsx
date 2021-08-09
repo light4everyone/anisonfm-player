@@ -1,7 +1,9 @@
 import React from 'react';
-import { AuthProvider } from './lib/auth';
-import { Login } from './pages/Login';
-import { Player } from './player/Player';
+import { Player } from '../pages/Player';
+import './index.scss';
+
+// import { Login } from '../pages/Login';
+// import { AuthProvider } from '../shared/auth/lib/auth';
 
 
 const App = () => {

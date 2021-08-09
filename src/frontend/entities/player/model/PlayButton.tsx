@@ -1,6 +1,6 @@
 import React from "react";
-import { Play } from "./icons/Play";
-import { Stop } from "./icons/Stop";
+import { Play } from "../ui/icons/Play";
+import { Stop } from "../ui/icons/Stop";
 
 export const PlayButton = ({ play, onToggle }: { play: boolean, onToggle: () => void}) => {
   

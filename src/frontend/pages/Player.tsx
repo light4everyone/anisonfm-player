@@ -1,9 +1,9 @@
 import React, { ChangeEvent, useEffect, useRef, useState } from "react";
 import { Howl } from 'howler';
 import { useStore } from "effector-react";
-import { Counter } from "./Counter";
-import { PlayButton } from "./PlayButton";
-import { animeImageUrl$, animeTitle$, animeUrl$, audioLoaded, play$, playToggle, trackDuration$, trackTitle$ } from "./store";
+import { Counter } from "../entities/player/model/Counter";
+import { PlayButton } from "../entities/player/model/PlayButton";
+import { animeImageUrl$, animeTitle$, animeUrl$, audioLoaded, play$, playToggle, trackDuration$, trackTitle$ } from "../entities/player/model/store";
 
 export const Player = () => {
   const play = useStore(play$);

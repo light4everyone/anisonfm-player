@@ -1,5 +1,5 @@
 import { app, BrowserWindow, Tray, screen, shell, dialog, webContents, ipcMain, Menu, session } from 'electron';
-import { AuthCallback } from './models/auth-callback.model';
+// import { AuthCallback } from '../models/auth-callback.model';
 import { deletePassword, getPassword, setPassword } from 'keytar';
 import path from 'path';
 
@@ -107,7 +107,7 @@ if (gotTheLock) {
   app.on('second-instance', (e, argv) => {
     if (process.platform == 'win32') {
       const deeplinkingUrl = argv.slice(1)[1];
-      mainWindow.webContents.send('auth-callback', { response: deeplinkingUrl } as AuthCallback);
+      mainWindow.webContents.send('auth-callback', { response: deeplinkingUrl });
     }
   });
 
